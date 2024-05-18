@@ -1,0 +1,32 @@
+table{
+    width: 90%; /* Ajusta la tabla al 100% del ancho del contenedor */
+    table-layout: fixed;
+    margin: 0 auto;
+    font-size: 12px; 
+    border: 1px solid #ddd; /* Bordes más finos */
+    
+}
+h1{
+    text-align: center;
+    color: #333; /* Color de texto gris oscuro */
+    margin-top: 20px; /* Margen superior de 20px */
+}
+body {
+    background-color: #f0f0f0; /* Color de fondo gris claro */
+    font-family: Arial, sans-serif; /* Tipo de fuente para el cuerpo del documento */
+    margin: 0; /* Eliminar márgenes predeterminados del cuerpo */
+}
+td, th{
+    padding: 10px; /* Reduce el padding a 5px */
+    border: 1px solid  #333; /* Bordes más finos */
+
+}
+.email{
+    width: 220px; 
+}
+.id{
+    width: 50px; 
+}
+.nom{
+    width: 150px; 
+}

@@ -1,0 +1,29 @@
+para enviar por parametro: 
+al final abrimos signo de preguntas, i colocamos el id.
+echo "<td> <a href="modificar_alu.php" >Modificar </a> </td>";
+Sintaxis: echo "<td> <a href='modificar_alu.php?ida=$vec[0]' >Modificar </a> </td>";
+
+
+Cursada
+id_alumno   int PK
+id_materia  int PK
+nota1   int
+nota2   int
+asistencia   int
+estado   text
+
+
+hacer formulario de registrar Cursada
+
+    alumno select
+    materia select
+    nota1 input
+    nota2 input
+    asistencia input
+    estado calcular con jquery
+
+    boton registrar y borrar
+
+
+
+

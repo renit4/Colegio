@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio</title>
+</head>
+<body>
+    <br>
+    <center><h1>Colegio-alumnos-materias!</h1></center>
+    <center><a href="materias.html" target="_blank">materias</a></center>
+    <br>
+    <br>
+    <form action="../registrarform.php" method="post">
+        <table border="3" align="center"  cellpadding="60" width="500px">
+            <tr><td colspan="2"><center>Ingrese sus datos:</center></td></tr>
+            <tr> 
+                <td>Apellido y Nombre: <input type="text"  name="nom" id="nom"></td>
+                <td>DNI: <input type="number" min="1" max="100000000"  name="dni" id="dni"></td>
+            </tr>
+            <tr> 
+                <td>Fecha de nacimiento: <input type="date" name="fnac" id="fnac"></td>
+                <td>Ciudad: <input type="text"  name="ciu" id="ciu"></td>
+            </tr>
+            <tr> 
+                <td>Domicilio: <input type="text" name="domicilio" id="domicilio"></td>
+                <td>Direccion de Mail: <input type="text" name="mail" id="mail"></td>
+            </tr>
+            <tr> 
+                <td>Genero: <input type="text" name="gen" id="gen"></td>
+                <td>Numero de contacto: <input type="text" name="tel" id="tel"></td>
+            </tr>
+            <tr><td colspan="2"> <center><button type="submit" name="boton" id="boton">Enviar datos</button></center></td></tr>
+        </table>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+</body>
+</html>

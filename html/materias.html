@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materias</title>
+</head>
+<body>
+    <br>
+    <h1><center>Materias</center></h1>
+    <center><a href="colegio.html">volver</a></center>
+    <br>
+    <br>
+    <form action="../regmaterias.php" method="post">
+        <table border="3" cellpadding="60" align="center" width="600px">
+            <tr><th colspan="2">Materias del colegio:</th></tr>
+            <tr>
+                <td>Nombre: <input type="text" name="nom" id="nom"></td>
+                <td>Cantidad horas: <input type="number" min="1" max="1000" name="horas" id="horas"></td>
+            </tr>
+            <tr>
+                <td>Correlativas: <input type="text" name="correlativas" id="correlativas"></td>
+                <td>Numero Curso: <input type="number" min="1" max="10" name="curso" id="curso"></td>
+            </tr>
+            <tr><th colspan="2"><button type="submit"  name="boton" id="boton"> Enviar</button></th></tr>
+        </table>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
