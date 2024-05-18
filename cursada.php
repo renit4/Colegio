@@ -6,6 +6,15 @@
     <title>Cursada</title>
 </head>
 <body>
+    <?php
+        include("conexion.php");
+        $sql1="SELECT A.id_alumno, A.apeynom, A.dni
+                FROM alumno A";
+        $sql2="SELECT M.id_materia, M.nombre FROM materia M";
+        echo $sql2;
+        $resa=mysqli_query($con,$sql1);
+        $resm=mysqli_query($con,$sql2);
+    ?>
     <h1><center>Registrar cursada:</center></h1>
     <br>
     <br>
@@ -14,15 +23,21 @@
             <tr>
                 <td>alumnos</td>
                 <td><select name="alumnos" id="alumnos">
-                    <option value=""></option>
-                    <option value=""></option>
+                    <?php   
+                        while($veca=mysqli_fetch_array($resa)){
+                    echo "<option value=$veca[0]>$veca[1]-$veca[2]</option>";
+                    
+                     }?>
                 </select></td>
             </tr>
             <tr>
                 <td>materias</td>
                 <td><select name="materias" id="materias">
-                    <option value=""></option>
-                    <option value=""></option>
+                <?php  
+                        while($vecm=mysqli_fetch_array($resm)){
+                    echo "<option value=$vecm[0]>$vecm[1]</option>";
+                    
+                     }?> 
                 </select></td>
             </tr>
             <tr>
@@ -42,7 +57,9 @@
                 <td><input type="text" readonly name="estado" id="estado"></td>
             </tr>
             <tr>
-                <td colspan="2"> <center><button type="submit" id="boton" name="boton">Enviar</button></center></td>
+                <td colspan="2"> <center><button type="submit" id="boton" name="boton">Enviar</button>     
+                    <button type="submit"  name="estado" id="estado">Estado</button></center>
+                </td>
             </tr>
         </table>
     </form>

@@ -47,7 +47,7 @@
                 echo "<td>$vec[7]</td>";
                 echo "<td>$vec[8]</td>";
                 echo "<th> <a href='../modificar_alu.php?ida=$vec[0]' >Modificar </a> </th>";
-                echo "<th> <a href=''>Eliminar</a> </th>";
+                echo "<th> <a href='eliminar_alu.php?ida=$vec[0]'>Eliminar</a> </th>";
                 echo "</tr>";
             } echo "</table>";
 

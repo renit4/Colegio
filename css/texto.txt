@@ -26,4 +26,20 @@ hacer formulario de registrar Cursada
 
 
 
+para concatenar en php en con puntos
+
+ejemplo: echo "<option value=$vec[0]> $vec[1].'-'.$vec[2]</opcion>"
+
+
+Tarea:Listar cursada, eliminar y modificar. 
+al eliminar, Verificar que no existan registros en la tabla cursada.
+
+$sql="DELETE FROM cursada WHERE id_alumno=... AND id_materia=..."
+
+?idm=vec[0]?ida=vec[0];
+
+
+
+
+
 
