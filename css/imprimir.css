@@ -3,7 +3,7 @@ table{
     table-layout: fixed;
     margin: 0 auto;
     font-size: 12px; 
-    border: 1px solid #ddd; /* Bordes más finos */
+    border: 3px solid #333; /* Bordes más finos */
     
 }
 h1{
@@ -12,7 +12,6 @@ h1{
     margin-top: 20px; /* Margen superior de 20px */
 }
 body {
-    background-color: #f0f0f0; /* Color de fondo gris claro */
     font-family: Arial, sans-serif; /* Tipo de fuente para el cuerpo del documento */
     margin: 0; /* Eliminar márgenes predeterminados del cuerpo */
 }

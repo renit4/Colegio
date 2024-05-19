@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listado</title>
-    <link rel="stylesheet" href="../css/imprimir.css">
+    <link rel="stylesheet" href="css/imprimir.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />
 </head>
-<body>
+<body class="p-3 text-primary-emphasis bg-primary-subtle border-primary-subtle ">
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+    ></script>
     <?php
     include("../conexion.php");
         $sql="SELECT * FROM `alumno`";
@@ -19,8 +30,9 @@
         ?>
         <h1><center>Impresion de alumnos:</center></h1>
         <br>
+        <a href="../index.html"><center>Volver</center></a>
         <br>
-        <table border="7" cellpadding="30" cellspacing="0" align="center">
+        <table  class="table table-bordered w-50" border="2px solid #333" width="90%" table-layout="fixed" align="center" >
             <tr>
                 <th class='id'>id</th>
                 <th>dni</th>
@@ -46,7 +58,7 @@
                 echo "<td class='email'>$vec[6]</td>";
                 echo "<td>$vec[7]</td>";
                 echo "<td>$vec[8]</td>";
-                echo "<th> <a href='../modificar_alu.php?ida=$vec[0]' >Modificar </a> </th>";
+                echo "<th> <a href='modificar_alu.php?ida=$vec[0]' >Modificar </a> </th>";
                 echo "<th> <a href='eliminar_alu.php?ida=$vec[0]'>Eliminar</a> </th>";
                 echo "</tr>";
             } echo "</table>";

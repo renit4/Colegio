@@ -1,5 +1,5 @@
 <?php
-    include("conexion.php");
+    include("../conexion.php");
 
     $dni = $_POST["dni"];
     $apeynom = $_POST["nom"];

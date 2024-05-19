@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursada</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+    />
 </head>
-<body>
+<body class="p-3 text-primary-emphasis bg-primary-subtle border-primary-subtle ">
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+    ></script>
     <?php
-        include("conexion.php");
+        include("../conexion.php");
         $sql1="SELECT A.id_alumno, A.apeynom, A.dni
                 FROM alumno A";
         $sql2="SELECT M.id_materia, M.nombre FROM materia M";
-        echo $sql2;
+        
         $resa=mysqli_query($con,$sql1);
         $resm=mysqli_query($con,$sql2);
     ?>
@@ -19,7 +30,7 @@
     <br>
     <br>
     <form action="proc_cursada.php" method="post">
-        <table border="3" align="center" cellpadding="50" width="800px">
+        <table border="3" align="center" cellpadding="50" width="800px" class="table table-bordered w-50">
             <tr>
                 <td>alumnos</td>
                 <td><select name="alumnos" id="alumnos">
@@ -27,7 +38,7 @@
                         while($veca=mysqli_fetch_array($resa)){
                     echo "<option value=$veca[0]>$veca[1]-$veca[2]</option>";
                     
-                     }?>
+                    }?>
                 </select></td>
             </tr>
             <tr>
@@ -37,7 +48,7 @@
                         while($vecm=mysqli_fetch_array($resm)){
                     echo "<option value=$vecm[0]>$vecm[1]</option>";
                     
-                     }?> 
+                    }?> 
                 </select></td>
             </tr>
             <tr>

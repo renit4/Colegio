@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/modificar.css">
+    <link rel="stylesheet" href="../css/modificar.css">
     <title>Modificar</title>
 </head>
 <body>
     <?php
-    include("conexion.php");
+    include("../conexion.php");
         $id= $_GET["ida"];
 
         echo "id alumno: ".$id;

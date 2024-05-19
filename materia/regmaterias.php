@@ -1,5 +1,5 @@
 <?php
-    include("conexion.php");
+    include("../conexion.php");
 
     $nombre = $_POST["nom"];
     $hs = $_POST["horas"];
