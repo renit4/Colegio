@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="estado.js"></script>
+    
     <title>Cursada</title>
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -28,6 +31,7 @@
     ?>
     <h1><center>Registrar cursada:</center></h1>
     <br>
+    <a href="../index.html"><center>Menu</center></a>
     <br>
     <form action="proc_cursada.php" method="post">
         <table border="3" align="center" cellpadding="50" width="800px" class="table table-bordered w-50">
@@ -68,8 +72,8 @@
                 <td><input type="text" readonly name="estado" id="estado"></td>
             </tr>
             <tr>
-                <td colspan="2"> <center><button type="submit" id="boton" name="boton">Enviar</button>     
-                    <button type="submit"  name="estado" id="estado">Estado</button></center>
+                <td colspan="2"> <center><button type="submit" id="boton" name="boton">Enviar</button> 
+                    <button type="button" name="est" id="est">Estado</button></center>
                 </td>
             </tr>
         </table>
