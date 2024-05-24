@@ -49,7 +49,7 @@
             echo "<td>$vec[2]</td>";
             echo "<td>$vec[3]</td>";
             echo "<td>$vec[4]</td>";
-            echo "<td><a href=''>modificar</a></td>";
+            echo "<td><a href='mod_materia.php?idm=$vec[0]'>modificar</a></td>";
             echo "<td><a href=''>eliminar</a></td>";
             echo "<tr>";
         }echo"</table>";
