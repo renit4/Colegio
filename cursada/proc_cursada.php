@@ -8,8 +8,8 @@
     $asis  = $_POST["asistencia"];
     $est  = $_POST["estado"];
 
-    $sql = "INSERT INTO `cursada`( `nota1`, `nota2`, `asistencia`, `estado`) 
-            VALUES ($num1,$num2,$asis,'$est')";
+    $sql = "INSERT INTO `cursada`(`id_alumno`,`id_materia`, `nota1`, `nota2`, `asistencia`, `estado`) 
+            VALUES ($alum,$mat,$num1,$num2,$asis,'$est')";
 
     $res = mysqli_query($con,$sql);
     if($res==true){
