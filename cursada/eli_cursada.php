@@ -3,6 +3,16 @@
     $id_a = $_GET["ida"];
     $id_m = $_GET["idm"];
 
-    echo "id materia: ".$id_m;
+    $sql = "DELETE FROM cursada
+            WHERE id_alumno=$id_a
+            AND id_materia=$id_m";
+    $res = mysqli_query($con,$sql);
+
+    if($res == true){
+        echo "salio bien";
+    }
+    else{
+        echo "muy mal";
+    }
 
 ?>

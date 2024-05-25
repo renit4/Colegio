@@ -28,7 +28,7 @@
             echo "salio mal";
         }
         else{
-          ?> 
+        ?> 
     <h1><center>Cursadas</center></h1>
     <br>
     <center><a href="../index.html">menu</a></center>
@@ -54,7 +54,7 @@
         echo "<td>$vec[7]</td>";
         echo "<td>$vec[8]</td>";
         echo "<td>$vec[9]</td>";
-        echo "<td><a href=''>Modificar</a> </td>";
+        echo "<td><a href='mod_cursada.php?ida=$vec[0]&idm=$vec[2]'>Modificar</a> </td>";
         echo "<td><a href='eli_cursada.php?ida=$vec[0]&idm=$vec[2] ' >Eliminar</a></td>";    
         echo "<tr>";
     } echo "</table>";
