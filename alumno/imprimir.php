@@ -45,6 +45,7 @@
                 <th>telefono</th>
                 <th>modificar</th>
                 <th>eliminar</th>
+                
             </tr>
             <?php
             while($vec = mysqli_fetch_array($res)){
